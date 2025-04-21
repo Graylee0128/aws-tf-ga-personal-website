@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李欣翰 (Xinhan Li) | DevOps & Cloud Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="avatar-container">
+                    <img src="/image/head.JPG" alt="大頭" class="profile-avatar">
+                </div>
+                <h1>李欣翰 <span class="en-name">Xinhan Li</span></h1>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:xinhanli.job@gmail.com">xinhanli.job@gmail.com</a> | 
+                    <i class="fab fa-github"></i> <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
+                    <i class="fas fa-map-marker-alt"></i> 台灣，新北</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2><i class="fas fa-bullseye"></i> Objective</h2>
+                <p>熱衷雲端架構與自動化部署的 DevOps 初學者，具備 AWS 二層架構實作經驗，熟悉 EC2、S3、RDS 服務，並具備基本的 Kubernetes 操作能力。</p>
+                <p>目前正在準備 AWS Certified Solutions Architect – Associate（SAA）證照，期望未來能成為一位專業的 DevOps / Cloud Engineer，參與 CI/CD 流程建置、雲端架構優化與平台穩定性提升等工作，並持續精進雲端與系統管理相關技能。</p>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-briefcase"></i> Projects</h2>
+                
+                <div class="project">
+                    <h3><i class="fas fa-globe"></i> AWS WordPress Web Architecture Project</h3>
+                    <p>使用 AWS 架設 WordPress 雙層架構，實作基本雲端部署流程與網路隔離。</p>
+                    <ul>
+                        <li>使用自訂 VPC 劃分 Public / Private Subnet</li>
+                        <li>EC2（Public Subnet）安裝 WordPress，連接 RDS（Private Subnet）</li>
+                        <li>設定 Security Groups 控管 HTTP / SSH / DB 流量</li>
+                        <li>採用 t3.micro（Free Tier）、部署於 ap-east-1a 區域</li>
+                    </ul>
+                    <div class="tech-box">
+                        <strong>🔧 技術：</strong> VPC、EC2、RDS、Security Group、Linux CLI
+                    </div>
+                    <div class="tech-box">
+                        <strong>🚀 擴充規劃：</strong> 多 AZ、ALB、Auto Scaling、Terraform（IaC）
+                    </div>
+                    <div class="demo-link">
+                        <strong>📎 Demo：</strong> <a href="http://18.162.194.92/wp-admin/" target="_blank">WordPress 管理頁</a>（Demo 帳密可提供）
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-tools"></i> Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-cloud"></i> Cloud Platforms</h4>
+                        <ul>
+                            <li>AWS EC2</li>
+                            <li>AWS S3</li>
+                            <li>AWS RDS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-box"></i> Container & Orchestration</h4>
+                        <ul>
+                            <li>Kubernetes（初階操作）</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-desktop"></i> Operating Systems</h4>
+                        <ul>
+                            <li>Linux (Ubuntu)</li>
+                            <li>Shell Script</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-code"></i> Programming</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <ul>
+                            <li>中文（母語）</li>
+                            <li>English (TOEIC 710)</li>
+                            <li>日本語（JLPT N2）</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-item">
+                    <h3>國立台灣師範大學 科技應用與人力資源發展系</h3>
+                    <p class="date">2021 - 2024（2025.04 役畢）</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-info-circle"></i> Others</h2>
+                <ul class="others-list">
+                    <li>正在學習 CI/CD 工具與基礎 DevOps 流程設計</li>
+                    <li>熟悉命令列操作與基礎系統維護</li>
+                    <li>積極參與技術社群與線上課程，持續擴充雲端與自動化技能</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 李欣翰 (Xinhan Li) | <a href="mailto:xinhanli.job@gmail.com">Contact</a></p>
+        </footer>
+    </div>
+</body>
+</html>

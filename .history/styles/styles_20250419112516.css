@@ -1,0 +1,261 @@
+/* Base Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f5f7fa;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.en-name {
+    font-weight: normal;
+    font-size: 1.8rem;
+    opacity: 0.9;
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.contact-info i {
+    margin-right: 5px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--light-color);
+    display: flex;
+    align-items: center;
+}
+
+.card h2 i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Project Styles */
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project h3 {
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.project h3 i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.project ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--primary-color);
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.demo-link {
+    margin-top: 0.8rem;
+}
+
+.demo-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.demo-link a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Styles */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.skill-category h4 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.skill-category h4 i {
+    margin-right: 8px;
+    color: var(--accent-color);
+}
+
+.skill-category ul {
+    margin-left: 1.2rem;
+}
+
+/* Education Styles */
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.education-item h3 {
+    color: var(--dark-color);
+    margin-bottom: 0.2rem;
+}
+
+.date {
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* Others Styles */
+.others-list {
+    margin-left: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    color: var(--text-light);
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .en-name {
+        font-size: 1.4rem;
+    }
+    
+    .header-content, .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 添加到您的styles.css文件 */
+.avatar-container {
+    width: 80px;      /* 調小這個值縮小頭像 */
+    height: 80px;     /* 保持與width相同 */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #3498db; /* 變細邊框 */
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
