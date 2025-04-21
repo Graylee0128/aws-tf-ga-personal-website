@@ -1,0 +1,14 @@
+name: Listing S3 Buckets
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  log_msg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log
+        run: echo "the workflow is working ..."
