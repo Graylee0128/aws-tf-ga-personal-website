@@ -31,6 +31,4 @@ resource "aws_s3_bucket_policy" "static_site_policy" {
       }
     ]
   })
-
-  depends_on = [ aws_s3_bucket_public_access_block.stataic_site_access ]
 }
