@@ -33,14 +33,16 @@ jobs:
       - name: Terraform Plan
         env: 
           BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
-        run: |
-          terraform plan \
-            -var="bucket_name=$BUCKET_NAME"
+        run: terraform plan
         working-directory: terraform
 
       - name: Terraform Apply
-        env: 
-          TF_VAR_bucket_name: ${{ secrets.BUCKET_NAME }}
-        run: |
-          terraform apply --auto-approve
+        run: terraform apply
         working-directory: terraform
+
+      - name: List S3 Buckets
+        env: 
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: |
+          echo "Listing S3 Buckets"
+          aws s3 ls
